@@ -31,16 +31,9 @@ function divide(a, b) {
     return a / b;
 }
 
-// Modulus
-function modulus(a, b) {
-
-    // Prevent modulus by zero
-    if (b === 0) {
-        alert("Cannot divide by zero.");
-        return "";
-    }
-
-    return a % b;
+// Percentage
+function percentage(value) {
+    return value / 100;
 }
 
 function calculateExpression(expression) {
@@ -77,7 +70,7 @@ function calculateExpression(expression) {
                 break;
 
             case "%":
-                result = modulus(result, numbers[i + 1]);
+                result = percentage(result);
                 break;
 
         }
